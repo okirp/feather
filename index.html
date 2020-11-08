@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Feather</title>
+</head>
+
+<body class="parent">
+    <header class="section">
+        <!-- <div id="logo">
+            <img src="assets/icon-logo.svg">
+        </div> -->
+        <div id="app">
+            {{ message }}
+        </div>
+        <div id="i">
+            Input:
+        </div>
+        <div id="o">
+            Output:
+        </div>
+    </header>
+    <div class="left-side blue section">
+        <div id="c-f">
+            <label for="f-u"><img src="assets/icon-add.svg"></label>
+            <file-upload></file-upload>
+        </div>
+        <div id="c-b">
+            <upload-button></upload-button>
+        </div>
+    </div>
+    <main class="section">
+        <div id="u">
+        </div>
+    </main>
+    <footer class="green section">Made with love by <a href="http://aodesign.tech/" target="_blank">AOD</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

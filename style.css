@@ -1,0 +1,74 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  padding: 2rem;
+  height: 90vh;
+  display: grid;
+  grid-template: auto 1fr auto/auto 1fr auto;
+}
+body a {
+  color: blueviolet;
+  text-decoration: none;
+}
+body header {
+  grid-column: 1/4;
+  padding-bottom: 2rem;
+}
+body header {
+  display: flex;
+  align-items: center;
+}
+body header #app {
+  font-weight: 700;
+}
+body header #i {
+  margin-left: 2rem;
+}
+body header #o {
+  margin-left: 16rem;
+}
+body .left-side {
+  grid-column: 1/2;
+}
+body .left-side #c-f label {
+  background-color: blueviolet;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+body .left-side #c-f input {
+  display: none;
+}
+body .left-side #c-b button {
+  background-color: #24bb8e;
+  /* Green */
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border: none;
+  cursor: pointer;
+}
+body main {
+  grid-column: 2/3;
+  padding-left: 2.5rem;
+}
+body main #u {
+  background-color: gray;
+  width: 2rem;
+}
+body main #out {
+  background-color: green;
+  width: 250vw;
+}
+body .right-side {
+  grid-column: 3/4;
+}
+body footer {
+  grid-column: 1/4;
+}
+
+/*# sourceMappingURL=style.css.map */
