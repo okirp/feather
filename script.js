@@ -22,8 +22,9 @@ Vue.component('file-upload', {
       files = this.$refs.file.files
       fData = new FormData()
       vm.ms = ''
-      for(i=0;i<files.length;i++){
+      for (i = 0; i < files.length; i++) {
         fData.append('files[' + i + ']', files[i])
+        console.log(fData[i])
         vm.ms = files[i].name + ' \n ' + vm.ms
       }
     },
@@ -35,15 +36,16 @@ new Vue({ el: '#c-f' })
 Vue.component('upload-button', {
   data: function () {
     return {
+      response: null
     }
   },
   methods: {
-    onUpload(event) {
-      //do event
-      console.log('this happened')
-    }
+    // onUpload(event) {
+    //   //do event
+    //   console.log('this happened')
+    // }
   },
-  template: '<button @click="onUpload"><img src="assets/icon-upload.svg"></button>'
+  template: '<input type="submit" id="sub">'
 })
 new Vue({ el: '#c-b' })
 
@@ -54,3 +56,16 @@ var vm = new Vue({
   },
   template: '<div style="white-space: pre-line;">{{ ms }}</div>'
 })
+
+formElem.onsubmit = async (e) => {
+  e.preventDefault();
+
+  let response = await fetch('/article/formdata/post/user', {
+    method: 'POST',
+    body: new FormData(formElem)
+  });
+
+  let result = await response;
+
+  alert(result.message);
+};

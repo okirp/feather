@@ -41,7 +41,7 @@ body .left-side #c-f label {
 body .left-side #c-f input {
   display: none;
 }
-body .left-side #c-b button {
+body .left-side #c-b label {
   background-color: #24bb8e;
   /* Green */
   width: 60px;
@@ -51,6 +51,9 @@ body .left-side #c-b button {
   margin-bottom: 1rem;
   border: none;
   cursor: pointer;
+}
+body .left-side #c-b input {
+  display: none;
 }
 body main {
   grid-column: 2/3;
