@@ -58,13 +58,17 @@ formElem.onsubmit = async (e) => {
   const files = event.target.files
   const formData = new FormData(formElem)
 
-  fetch('http://10.147.18.50/cgi-bin/hw.sh', {
+  fetch('http://localhost/cgi-bin/hw.sh', {
     method: 'POST',
     body: formData
   })
-  .then(response => response.json())
+  .then(response => response.text())
   .then(data => {
     console.log(data)
+      var node = document.createElement('div')
+      var textNode = document.createTextNode(data)
+      node.appendChild(textNode)
+      document.querySelector('main').appendChild(node)
   })
   .catch(error => {
     console.error(error)
