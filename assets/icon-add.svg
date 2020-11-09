@@ -55,7 +55,7 @@
     <path
        transform="matrix(0.26458333,0,0,0.26458333,27.214285,83.910713)"
        d="M 13.5 0 L 13.5 13.5 L 0 13.5 L 0 16.5 L 13.5 16.5 L 13.5 30 L 16.5 30 L 16.5 16.5 L 30 16.5 L 30 13.5 L 16.5 13.5 L 16.5 0 L 13.5 0 z "
-       style="fill:#FFF;fill-opacity:1;stroke-width:1.47148;stroke-linecap:round;paint-order:markers stroke fill"
+       style="fill:#D9D9D9;fill-opacity:1;stroke-width:1.47148;stroke-linecap:round;paint-order:markers stroke fill"
        id="rect835" />
   </g>
 </svg>

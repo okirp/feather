@@ -56,7 +56,7 @@
        sodipodi:nodetypes="cccccccccccccccccccc"
        transform="matrix(0.26458333,0,0,0.26458333,60.476189,82.398804)"
        d="M 56.692383,-1.6299213e-7 24.298828,31.724609 32.316406,39.742188 51.023438,21.035156 V 102.04688 H 11.84375 V 75.589844 H 0.50585938 v 26.457036 11.33984 H 113.89062 V 102.04688 75.589844 H 102.55273 V 102.04688 H 62.361328 V 21.035156 l 18.708984,18.707032 8.017579,-8.017579 z"
-       style="fill:#FFF;stroke-width:1.30308;stroke-linecap:round;paint-order:markers stroke fill"
+       style="fill:#D9D9D9;stroke-width:1.30308;stroke-linecap:round;paint-order:markers stroke fill"
        id="rect835" />
   </g>
 </svg>

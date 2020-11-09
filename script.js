@@ -60,9 +60,15 @@ var vm = new Vue({
 formElem.onsubmit = async (e) => {
   e.preventDefault();
 
-  let response = await fetch('/article/formdata/post/user', {
+  let response = await fetch('http://10.147.18.50', {
     method: 'POST',
     body: new FormData(formElem)
+  },{
+    
+    mode: 'cors',
+    method: 'post',
+    credentials: 'include'
+
   });
 
   let result = await response;
