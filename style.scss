@@ -13,8 +13,13 @@ body {
     grid-template: auto 1fr auto / auto 1fr auto;
 
     a {
-        color: blueviolet;
+        color: #D38A8A;
         text-decoration: none;
+        transition: 0.2s;
+    }
+    a:hover{
+        transition: 0.2s;
+        color: #ff5c5c;
     }
 
     header {
@@ -42,11 +47,18 @@ body {
         #c-f {
             label {
                 // background-color: blueviolet;
+                background-color: rgba(255, 255, 255, 0);
+                border-radius: 50%;
                 width: 60px;
                 height: 60px;
                 display: grid;
                 place-items: center;
                 margin-bottom: 1rem;
+                transition: ease-in-out 0.2s;
+            }
+            label:hover{
+                transition: ease-in-out 0.2s;
+                background-color: rgba(255, 255, 255, 0.25);
             }
             input {
                 display: none;
@@ -54,7 +66,8 @@ body {
         }
         #c-b {
             label {
-                // background-color: rgb(36, 187, 142); /* Green */
+                background-color: rgba(255, 255, 255, 0);
+                border-radius: 50%;
                 width: 60px;
                 height: 60px;
                 display: grid;
@@ -62,6 +75,10 @@ body {
                 margin-bottom: 1rem;
                 border: none;
                 cursor: pointer;
+            }
+            label:hover{
+                transition: ease-in-out 0.2s;
+                background-color: rgba(255, 255, 255, 0.25);
             }
             input {
                 display: none;
@@ -73,10 +90,12 @@ body {
         grid-column: 2 / 3;
         padding-left: 1.5rem;
         border-left: 0.5px solid #555555;
-        border-right: 0.5px solid #555555;
         #u {
-            background-color: gray;
-            width: 2rem;
+            // background-color: gray;
+            border-right: 0.5px solid #555555;
+            width: 12rem;
+            max-width: 17rem;
+            height: 100%;
         }
         #out {
             background-color: green;
@@ -89,7 +108,8 @@ body {
     }
 
     footer {
-        align-items: center;
+        border-top: 0.5px solid #555555;
+        padding-top: 1rem;
         grid-column: 1 / 4;
     }
 }

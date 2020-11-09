@@ -54,24 +54,23 @@ var vm = new Vue({
   data: {
     ms: ''
   },
-  template: '<div style="white-space: pre-line;">{{ ms }}</div>'
+  template: '<div id="u" style="white-space: pre-line;">{{ ms }}</div>'
 })
 
 formElem.onsubmit = async (e) => {
   e.preventDefault();
 
-  let response = await fetch('http://10.147.18.50', {
+  let response = await fetch('http://10.147.18.50/cgi-bin/hw.sh', {
     method: 'POST',
     body: new FormData(formElem)
   },{
-    
     mode: 'cors',
     method: 'post',
     credentials: 'include'
-
-  });
+  }
+);
 
   let result = await response;
 
-  alert(result.message);
+  alert(result);
 };
