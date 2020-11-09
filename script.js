@@ -40,10 +40,6 @@ Vue.component('upload-button', {
     }
   },
   methods: {
-    // onUpload(event) {
-    //   //do event
-    //   console.log('this happened')
-    // }
   },
   template: '<input type="submit" id="sub">'
 })
@@ -59,18 +55,18 @@ var vm = new Vue({
 
 formElem.onsubmit = async (e) => {
   e.preventDefault();
+  const files = event.target.files
+  const formData = new FormData(formElem)
 
-  let response = await fetch('http://10.147.18.50/cgi-bin/hw.sh', {
+  fetch('http://10.147.18.50/cgi-bin/hw.sh', {
     method: 'POST',
-    body: new FormData(formElem)
-  },{
-    mode: 'cors',
-    method: 'post',
-    credentials: 'include'
-  }
-);
-
-  let result = await response;
-
-  alert(result);
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+  })
+  .catch(error => {
+    console.error(error)
+  })
 };
